@@ -1,0 +1,23 @@
+{
+  "version": "2.6.0",
+  "summary": {
+    "title": "hephaestus-forge-threat-model",
+    "owner": "",
+    "description": "",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "cezarmierlita"
+      },
+      {
+        "name": "ninaagg"
+      }
+    ],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
