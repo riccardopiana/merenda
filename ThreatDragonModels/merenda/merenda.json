@@ -27,7 +27,7 @@
           {
             "position": {
               "x": 480,
-              "y": 250
+              "y": 120
             },
             "size": {
               "width": 112.5,
@@ -140,8 +140,8 @@
           },
           {
             "position": {
-              "x": 420,
-              "y": 113
+              "x": 200,
+              "y": 120
             },
             "size": {
               "width": 60,
@@ -253,14 +253,59 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "0b4010a0-bf3e-44f4-a4fc-a8d158226c57",
+            "source": {
+              "x": 260,
+              "y": 148
+            },
+            "target": {
+              "cell": "223d9071-ca81-450d-9ecb-5b94bbce3127",
+              "port": "c151023b-fa77-46f6-a1e6-e0918f239ac4"
+            },
+            "vertices": [
+              {
+                "x": 340,
+                "y": 148
+              }
+            ]
           }
         ],
         "description": "STRIDE"
