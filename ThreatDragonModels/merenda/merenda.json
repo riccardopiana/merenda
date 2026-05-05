@@ -1,5 +1,5 @@
 {
-  "version": "2.6.0",
+  "version": "2.6.1",
   "summary": {
     "title": "merenda",
     "owner": "riccardopiana",
@@ -22,16 +22,21 @@
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.6.0",
+        "version": "2.6.1",
         "cells": [
           {
             "position": {
-              "x": 429.99999999999943,
-              "y": -19.99999999999966
+              "x": 429.99999999999955,
+              "y": -39.99999999999983
             },
             "size": {
-              "width": 610,
-              "height": 810
+              "width": 620,
+              "height": 830
+            },
+            "attrs": {
+              "label": {
+                "text": "Cloud - Trusted"
+              }
             },
             "visible": true,
             "shape": "trust-boundary-box",
@@ -39,7 +44,7 @@
             "id": "c3f09bc0-0161-4460-9cf0-970a4b4b8a85",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "Cloud - Trusted ",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -74,13 +79,18 @@
               "width": 720,
               "height": 500
             },
+            "attrs": {
+              "label": {
+                "text": "Shop floor - Semi-trusted"
+              }
+            },
             "visible": true,
             "shape": "trust-boundary-box",
             "zIndex": -1,
             "id": "fee4b2e9-3d26-4343-a5b7-1e225378acaa",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "Shop floor - Semi-trusted ",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -96,6 +106,43 @@
                 "56fe0265-a49b-4639-a8b3-ff5eb12e2d2f",
                 "b759dc2a-43aa-4e20-9e52-59d020bdf732",
                 "d4ce644a-e94b-4cdc-82ed-8878f9bea105"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 24.4999999999998,
+              "y": 105.0000000000004
+            },
+            "size": {
+              "width": 310,
+              "height": 140
+            },
+            "attrs": {
+              "label": {
+                "text": "User - Untrusted"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "9477e859-4861-49e2-81b1-298127212df4",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "User - Untrusted ",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "baf7a1c9-0791-4ff4-852f-f24b5fb00a82",
+                "861fe8da-03c5-4b4d-8886-3432627459d3",
+                "41400f13-ac73-4a9a-a41f-2ed03fda24fa",
+                "b16fec24-9b7b-433b-bb21-f526b93c46b4",
+                "e606cf81-197e-4ed3-8568-cd60d4c1801a"
+              ],
+              "containedElements": [
+                "397c1ebb-8195-4284-bd5c-4c2b62a6f232",
+                "a10a941d-5f5c-493d-bb33-812931ff6e88"
               ]
             }
           },
@@ -248,7 +295,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "c3f09bc0-0161-4460-9cf0-970a4b4b8a85"
+                "c3f09bc0-0161-4460-9cf0-970a4b4b8a85",
+                "9477e859-4861-49e2-81b1-298127212df4"
               ]
             },
             "labels": [
@@ -349,7 +397,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "c3f09bc0-0161-4460-9cf0-970a4b4b8a85"
+                "c3f09bc0-0161-4460-9cf0-970a4b4b8a85",
+                "9477e859-4861-49e2-81b1-298127212df4"
               ]
             },
             "labels": [
@@ -403,7 +452,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "c3f09bc0-0161-4460-9cf0-970a4b4b8a85"
+                "c3f09bc0-0161-4460-9cf0-970a4b4b8a85",
+                "9477e859-4861-49e2-81b1-298127212df4"
               ]
             },
             "labels": [
@@ -708,7 +758,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "c3f09bc0-0161-4460-9cf0-970a4b4b8a85"
+                "c3f09bc0-0161-4460-9cf0-970a4b4b8a85",
+                "9477e859-4861-49e2-81b1-298127212df4"
               ]
             },
             "labels": [
@@ -856,7 +907,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "c3f09bc0-0161-4460-9cf0-970a4b4b8a85"
+                "c3f09bc0-0161-4460-9cf0-970a4b4b8a85",
+                "9477e859-4861-49e2-81b1-298127212df4"
               ]
             },
             "labels": [
@@ -1177,56 +1229,6 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Download Blueprints ",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "c3f09bc0-0161-4460-9cf0-970a4b4b8a85",
-                "fee4b2e9-3d26-4343-a5b7-1e225378acaa"
-              ]
-            },
-            "labels": [
-              "Download Blueprints"
-            ],
-            "id": "43062f12-6ee9-44cf-a17c-9f94f9c8d019",
-            "source": {
-              "cell": "2836d873-6f06-4e60-b297-f6cd00fcc52b",
-              "port": "25387b41-dd60-4a14-9869-46b07f85934b"
-            },
-            "target": {
-              "cell": "56fe0265-a49b-4639-a8b3-ff5eb12e2d2f",
-              "port": "9a2dc1ba-b5bc-46c4-8392-012e2eff5d1d"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
                   "name": "block"
                 },
                 "strokeDasharray": null
@@ -1423,6 +1425,56 @@
                 "y": 460
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Download Blueprints ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "c3f09bc0-0161-4460-9cf0-970a4b4b8a85",
+                "fee4b2e9-3d26-4343-a5b7-1e225378acaa"
+              ]
+            },
+            "labels": [
+              "Download Blueprints"
+            ],
+            "id": "43062f12-6ee9-44cf-a17c-9f94f9c8d019",
+            "source": {
+              "cell": "2836d873-6f06-4e60-b297-f6cd00fcc52b",
+              "port": "25387b41-dd60-4a14-9869-46b07f85934b"
+            },
+            "target": {
+              "cell": "56fe0265-a49b-4639-a8b3-ff5eb12e2d2f",
+              "port": "9a2dc1ba-b5bc-46c4-8392-012e2eff5d1d"
+            },
+            "vertices": []
           },
           {
             "position": {
