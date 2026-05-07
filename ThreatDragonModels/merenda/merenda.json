@@ -125,8 +125,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "9477e859-4861-49e2-81b1-298127212df4",
             "zIndex": -1,
+            "id": "9477e859-4861-49e2-81b1-298127212df4",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "User - Untrusted ",
@@ -1475,6 +1475,58 @@
               "port": "9a2dc1ba-b5bc-46c4-8392-012e2eff5d1d"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Scan upcoming piece ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Scan upcoming piece"
+            ],
+            "id": "d86496ed-aa00-4718-bf08-77a9928b4f8b",
+            "source": {
+              "cell": "d4060283-c796-4c65-b2ac-5c1231d4dacb",
+              "port": "9a2dc1ba-b5bc-46c4-8392-012e2eff5d1d"
+            },
+            "target": {
+              "cell": "56fe0265-a49b-4639-a8b3-ff5eb12e2d2f",
+              "port": "9a2dc1ba-b5bc-46c4-8392-012e2eff5d1d"
+            },
+            "vertices": [
+              {
+                "x": 1180,
+                "y": 250
+              }
+            ]
           },
           {
             "position": {
